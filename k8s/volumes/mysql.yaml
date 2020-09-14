@@ -1,7 +1,7 @@
 kind: PersistentVolume
 apiVersion: v1
 metadata:
-  namespace: sample
+  namespace: app
   name: mysql-pv
   labels:
     type: local
@@ -17,7 +17,7 @@ spec:
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  namespace: sample
+  namespace: app
   name: mysql-pvc
 spec:
   accessModes:

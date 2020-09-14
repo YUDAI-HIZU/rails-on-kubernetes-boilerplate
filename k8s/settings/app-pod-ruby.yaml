@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: app-pod-ruby
+spec:
+  containers:
+    - name: rails-app
+      image: hizukayudai/ruby:latest
+      command: ["rails", "server", "-b", "0.0.0.0"]
+      ports:
+        - containerPort: 3000
